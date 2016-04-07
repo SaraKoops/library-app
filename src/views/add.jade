@@ -1,0 +1,27 @@
+doctype html
+html
+	head 
+		title BIEB
+		//- link(rel='stylesheet' href='styles/index.css')
+		//- script(src='https://code.jquery.com/jquery-2.2.0.js')
+		//- script(src='js/index.js')
+	body
+		div(id='wrapper')
+			form(action='/add' method='post')
+					label Add a new book
+					br
+					p Title:
+					input(type='text' name='title' placeholder='i.e. De ontdekking van de hemel')
+					br
+					br
+					label Author:
+					br
+					input(type='text' name='author' placeholder='i.e. Harry Mulisch')
+					br
+					br
+					label Owner:
+					br
+					input(type='text' name='owner' placeholder='i.e. Sara')
+					br
+					br
+					input(type='submit' value='register')
